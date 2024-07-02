@@ -33,7 +33,8 @@ spring:
           uri: lb://ms-reparacion-vehiculo
           predicates:
             - Path=/api/v1/historial/**
-        - id: ms-products
-          uri: lb://ms-products
+
+        - id: ms-reportes
+          uri: lb://ms-reportes
           predicates:
-            - Path=/products/**
+            - Path=/api/v1/reportes/**
